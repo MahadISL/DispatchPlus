@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package ingest;
+
+option go_package = "github.com/MahadISL/dispatch-plus/pkg/ingest";
+
+service IngestService {
+  rpc UpdateLocation (LocationUpdateRequest) returns (LocationUpdateResponse);
+}
+
+message LocationUpdateRequest {
+  string driver_id = 1;
+  double latitude = 2;
+  double longitude = 3;
+}
+
+message LocationUpdateResponse {
+  string request_id = 1;
+  bool success = 2;
+}
