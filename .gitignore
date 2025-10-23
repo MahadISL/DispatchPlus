@@ -1,0 +1,13 @@
+# Compiled binaries
+*.exe
+*.exe~
+bin/
+dispatch-plus
+
+# Environment variables file - VERY IMPORTANT
+.env
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
